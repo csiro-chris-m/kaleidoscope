@@ -20,9 +20,6 @@
           "isEnabled": false,
           "layers": "Queensland_Marinas_Points_V4",
           "url": "http://www.cmar.csiro.au/geoserver/kscope-amrsma/ows",
-          "infoSectionOrder": [
-            ""
-          ],
           "info": [
             {
               "name": "",
@@ -36,9 +33,6 @@
           "isEnabled": false,
           "layers": "Queensland_Marinas_Points_V4",
           "url": "http://www.cmar.csiro.au/geoserver/kscope-amrsma/wfs",
-          "infoSectionOrder": [
-            ""
-          ],
           "info": [
             {
               "name": "",
@@ -60,9 +54,6 @@
       "isEnabled": false,
       "url": "http://www.cmar.csiro.au/geoserver/cmar/ows",
       "itemProperties": {
-        "infoSectionOrder": [
-          ""
-        ],
         "info": [
           {
             "name": "",
@@ -78,9 +69,6 @@
       "isEnabled": false,
       "url": "http://www.cmar.csiro.au/geoserver/nerp/ows",
       "itemProperties": {
-        "infoSectionOrder": [
-          ""
-        ],
         "info": [
           {
             "name": "",
