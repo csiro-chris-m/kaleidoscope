@@ -10,44 +10,72 @@
   ],
   "catalog": [
     {
-       "name": "Observation data",
-       "type": "group",
-       "isEnabled": false,
-       "items": [
+      "name": "QLD - Coastal Infrastructure",
+      "type": "group",
+      "isEnabled": false,
+      "items": [
+        {
+          "name": "Queensland Marinas (2020)",
+          "type": "wms",
+          "isEnabled": false,
+          "layers": "Queensland_Marinas_Points_V4",
+          "url": "http://www.cmar.csiro.au/geoserver/kscope-amrsma/ows",
+          "info": [
+            {
+              "name": "",
+              "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
+            }
+          ]
+        },
+        {
+          "name": "Queensland Marinas (2020) - data",
+          "type": "wfs",
+          "isEnabled": false,
+          "layers": "Queensland_Marinas_Points_V4",
+          "url": "http://www.cmar.csiro.au/geoserver/kscope-amrsma/wfs",
+          "info": [
+            {
+              "name": "",
+              "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "QLD - Fishery Management - Trawl Closures",
+      "type": "wms-getCapabilities",
+      "isEnabled": false,
+      "url": "http://www.cmar.csiro.au/geoserver/kscope-amrsma/ows"
+    },
+    {
+      "name": "CMAR",
+      "type": "wms-getCapabilities",
+      "isEnabled": false,
+      "url": "http://www.cmar.csiro.au/geoserver/cmar/ows",
+      "itemProperties": {
+        "info": [
           {
-             "name": "Population Density 2001",
-             "type": "wms",
-             "isEnabled": false,
-             "layers": "2001_enumeration_proj",
-             "url": "http://www.cmar.csiro.au/geoserver/nerp/ows"
-          },
-          {
-             "name": "Population Density 2006",
-             "type": "wms",
-             "isEnabled": false,
-             "layers": "2006_enumeration_proj",
-             "url": "http://www.cmar.csiro.au/geoserver/nerp/ows"
-          },
-          {
-           "name": "A nested group that's empty",
-           "type": "group",
-           "isEnabled": false,
-           "items": []
+            "name": "",
+            "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
           }
-       ]
+        ]
+      }
     },
     {
-       "name": "CMAR",
-       "type": "wms-getCapabilities",
-       "isEnabled": false,
-       "url": "http://www.cmar.csiro.au/geoserver/cmar/ows"
-    },
-    {
-       "name": "NERP",
-       "description": "Here is a generic description about NERP",
-       "type": "wms-getCapabilities",
-       "isEnabled": false,
-       "url": "http://www.cmar.csiro.au/geoserver/nerp/ows"
+      "name": "NERP",
+      "description": "Here is a generic description about NERP",
+      "type": "wms-getCapabilities",
+      "isEnabled": false,
+      "url": "http://www.cmar.csiro.au/geoserver/nerp/ows",
+      "itemProperties": {
+        "info": [
+          {
+            "name": "",
+            "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
+          }
+        ]
+      }
     }
   ]
 }
