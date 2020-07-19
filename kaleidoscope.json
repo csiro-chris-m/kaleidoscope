@@ -41,11 +41,11 @@
           ]
         },
         {
-          "name": "Queensland Sample Extent",
+          "name": "Sample Region Extent",
           "type": "wms",
           "isEnabled": false,
           "layers": "sample_extent",
-          "url": "http://www.cmar.csiro.au/geoserver/kscope-amrsma/wms",
+          "url": "http://www.cmar.csiro.au/geoserver/kscope-sample/wms",
           "info": [
             {
               "name": "",
