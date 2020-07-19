@@ -8,27 +8,7 @@
   "corsDomains": [
     "cmar.csiro.au"
   ],
-  "catalog": [
-    {
-      "name": "QLD - Sample Extents",
-      "type": "group",
-      "isEnabled": false,
-      "items": [
-        {
-          "name": "Sample Region Extent",
-          "type": "wms-getCapabilities",
-          "isEnabled": false,
-          "layers": "sample_extent",
-          "url": "http://www.cmar.csiro.au/geoserver/kscope/ows",
-          "info": [
-            {
-              "name": "",
-              "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
-            }
-          ]
-        }    
-      ]
-    },  	  
+  "catalog": [	  
     {
       "name": "QLD - Coastal Infrastructure",
       "type": "group",
