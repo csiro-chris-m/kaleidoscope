@@ -39,7 +39,20 @@
               "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
             }
           ]
-        }
+        },
+        {
+          "name": "Queensland Sample Extent",
+          "type": "wms",
+          "isEnabled": false,
+          "layers": "sample_extent",
+          "url": "http://www.cmar.csiro.au/geoserver/kscope-amrsma/wms",
+          "info": [
+            {
+              "name": "",
+              "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
+            }
+          ]
+        }        
       ]
     },
     {
