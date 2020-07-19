@@ -102,7 +102,7 @@
       "description": "Queensland Sample Data",
       "type": "wms-getCapabilities",
       "isEnabled": false,
-      "url": "http://www.cmar.csiro.au/geoserver/kscope-sample/ows",
+      "url": "http://www.cmar.csiro.au/geoserver/kscope/ows",
       "itemProperties": {
         "info": [
           {
