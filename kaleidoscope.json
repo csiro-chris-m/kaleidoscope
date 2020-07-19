@@ -15,10 +15,10 @@
       "isEnabled": false,
       "items": [
         {
-          "name": "Queensland Marinas (2020)",
-          "type": "wms",
+          "name": "Sample Region Extent",
+          "type": "wms-getCapabilities",
           "isEnabled": false,
-          "layers": "Queensland_Marinas_Points_V4",
+          "layers": "sample_extent",
           "url": "http://www.cmar.csiro.au/geoserver/kscope/ows",
           "info": [
             {
@@ -99,7 +99,7 @@
     },
     {
       "name": "Sample",
-      "description": "Queensland Sample Data",
+      "description": "Sample Data",
       "type": "wms-getCapabilities",
       "isEnabled": false,
       "url": "http://www.cmar.csiro.au/geoserver/kscope/ows",
