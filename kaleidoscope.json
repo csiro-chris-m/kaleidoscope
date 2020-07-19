@@ -10,6 +10,26 @@
   ],
   "catalog": [
     {
+      "name": "QLD - Sample Extents",
+      "type": "group",
+      "isEnabled": false,
+      "items": [
+        {
+          "name": "Queensland Marinas (2020)",
+          "type": "wms",
+          "isEnabled": false,
+          "layers": "Queensland_Marinas_Points_V4",
+          "url": "http://www.cmar.csiro.au/geoserver/kscope/ows",
+          "info": [
+            {
+              "name": "",
+              "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
+            }
+          ]
+        }    
+      ]
+    },  	  
+    {
       "name": "QLD - Coastal Infrastructure",
       "type": "group",
       "isEnabled": false,
@@ -39,20 +59,7 @@
               "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
             }
           ]
-        },
-        {
-          "name": "Sample Region Extent",
-          "type": "wms",
-          "isEnabled": false,
-          "layers": "sample_extent",
-          "url": "http://www.cmar.csiro.au/geoserver/kscope-sample/wms",
-          "info": [
-            {
-              "name": "",
-              "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
-            }
-          ]
-        }        
+        }      
       ]
     },
     {
@@ -89,6 +96,21 @@
           }
         ]
       }
-    }
+    },
+    {
+      "name": "Sample",
+      "description": "Queensland Sample Data",
+      "type": "wms-getCapabilities",
+      "isEnabled": false,
+      "url": "http://www.cmar.csiro.au/geoserver/kscope-sample/ows",
+      "itemProperties": {
+        "info": [
+          {
+            "name": "",
+            "content": "{{#dataSourceMetadata.asNestedObject.MetadataURL}}<a href='{{dataSourceMetadata.asNestedObject.MetadataURL.OnlineResource.xlink:href.xlink:href}}'><button class='tjs-_buttons__btn tjs-_buttons__btn-primary'>MARLIN Metadata</button></a>{{/dataSourceMetadata.asNestedObject.MetadataURL}}{{^dataSourceMetadata.asNestedObject.MetadataURL}}<p>No Marlin Metadata recorded</p>{{/dataSourceMetadata.asNestedObject.MetadataURL}}"
+          }
+        ]
+      }
+    }    
   ]
 }
